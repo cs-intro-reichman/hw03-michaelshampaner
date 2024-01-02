@@ -11,7 +11,17 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
+        String answerString = "";
+		for (int i = 0; i < s.length(); i++)
+		{
+			//if its a uppercase letter between A to Z: convert it to lowercase letter
+			if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z'){
+				answerString += (char)(s.charAt(i) + 'a' - 'A');
+			}
+			else{
+				answerString += s.charAt(i);
+			}
+		}
+        return answerString;
     }
 }
