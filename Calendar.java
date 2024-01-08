@@ -12,11 +12,11 @@ public class Calendar {
         }
         while (year == inputYear) {
 			if (dayOfWeek == 1) {
-				System.out.print(dayOfMonth + "/" + month + "/ " + year);	
+				System.out.print(dayOfMonth + "/" + month + "/" + year);	
                 System.out.println(" Sunday");
             } 
             else{
-				System.out.println(dayOfMonth + "/" + month + "/ " + year);	
+				System.out.println(dayOfMonth + "/" + month + "/" + year);	
 			}
 	 		advance();
         }
